@@ -2,11 +2,13 @@
 import React, { useState } from "react";
 import styles from "../Body.module.css";
 import CustomFilter from "./CustomFilterSelection/CustomFilterSelection";
+import { ProductCard } from "../ProductCard/ProductCard";
 
 function FilerSection() {
   const [showDropdown, setShowDropdown] = useState(false);
+  const [showFilters, setShowFilters] = useState(true);
   const [selected, setSelected] = useState("RECOMMENDED");
-
+  console.log(showFilters);
   const options = [
     "RECOMMENDED",
     "NEWEST FIRST",
@@ -16,7 +18,7 @@ function FilerSection() {
   ];
 
   return (
-    <>
+    <div className={styles.container}>
       <div className={styles.topBar}>
         <span className={styles.itemCount}>
           <span className={styles.count}>3425 ITEMS</span>
@@ -26,7 +28,12 @@ function FilerSection() {
               className={styles.arrow}
               src={"arrow-left.png"}
             />
-            <span className={styles.hideText}>HIDE FILTER</span>
+            <span
+              onClick={() => setShowFilters(prev=>!prev)}
+              className={styles.hideText}
+            >
+              HIDE FILTER
+            </span>
 
             <span className={styles.filterText}>FILTER</span>
           </div>
@@ -60,8 +67,17 @@ function FilerSection() {
           )}
         </div>
       </div>
-      <CustomFilter />
-    </>
+      <div className={styles.bodyContent}>
+        {!showFilters && (
+          <div>
+            <CustomFilter />
+          </div>
+        )}
+        <div>
+          <ProductCard />
+        </div>
+      </div>
+    </div>
   );
 }
 

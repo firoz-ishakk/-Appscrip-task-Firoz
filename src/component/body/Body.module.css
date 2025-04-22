@@ -111,6 +111,11 @@
   display: none;
 }
 
+.bodyContent {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+  }
 @media screen and (max-width: 425px) {
   .hideText {
     display: none;
@@ -137,3 +142,4 @@
     position: relative;
   }
 }
+

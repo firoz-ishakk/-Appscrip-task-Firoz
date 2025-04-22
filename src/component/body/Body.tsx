@@ -3,7 +3,8 @@ import Heading from "./Heading/Heading";
 import styles from "./Body.module.css";
 import FilerSection from "./filterSection/FilterSection";
 
-function Body() {
+function Body(dataFetch: any) {
+  console.log(dataFetch, "thedata");
   return (
     <div className={styles.body}>
       <div>

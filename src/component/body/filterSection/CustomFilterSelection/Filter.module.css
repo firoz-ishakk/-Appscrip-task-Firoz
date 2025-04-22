@@ -90,6 +90,12 @@
     font-size: 14px;
   }
 
+  .bodyContent{
+    display: flex;
+    flex-direction: row;
+  }
+ 
+
   @media screen and (max-width: 425px) {
         .filterContainer{
             display: none;
