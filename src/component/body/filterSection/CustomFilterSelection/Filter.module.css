@@ -1,7 +1,7 @@
 .filterContainer {
     font-family: Arial, sans-serif;
     width: 100%;
-    max-width: 300px;
+    /* max-width: 1800px; */
     background-color: transparent;
     border-radius: 4px;
     /* box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1); */
@@ -9,6 +9,7 @@
   
   .filterItem{
     border-bottom: 1px solid #e0e0e0;
+    width: 300px;
   }
   
   .filterHeader {

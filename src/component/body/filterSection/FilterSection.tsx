@@ -6,7 +6,7 @@ import { ProductCard } from "../ProductCard/ProductCard";
 
 function FilerSection() {
   const [showDropdown, setShowDropdown] = useState(false);
-  const [showFilters, setShowFilters] = useState(true);
+  const [showFilters, setShowFilters] = useState(false);
   const [selected, setSelected] = useState("RECOMMENDED");
   console.log(showFilters);
   const options = [

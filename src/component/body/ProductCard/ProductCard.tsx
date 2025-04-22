@@ -21,6 +21,87 @@ export const ProductCard = () => {
           outOfStock: true,
           isFavorited: false
         },
+        {
+          id: 2,
+          name: 'PP3OC MILKYWAY DRESS IN WOOL',
+          price: 32.50,
+          priceText: 'or Create an account to see pricing',
+          image: '/images/toy.jpg',
+          outOfStock: true,
+          isFavorited: false
+        },
+        {
+          id: 2,
+          name: 'PP3OC MILKYWAY DRESS IN WOOL',
+          price: 32.50,
+          priceText: 'or Create an account to see pricing',
+          image: '/images/toy.jpg',
+          outOfStock: true,
+          isFavorited: false
+        },
+        {
+          id: 2,
+          name: 'PP3OC MILKYWAY DRESS IN WOOL',
+          price: 32.50,
+          priceText: 'or Create an account to see pricing',
+          image: '/images/toy.jpg',
+          outOfStock: true,
+          isFavorited: false
+        },
+        {
+          id: 2,
+          name: 'PP3OC MILKYWAY DRESS IN WOOL',
+          price: 32.50,
+          priceText: 'or Create an account to see pricing',
+          image: '/images/toy.jpg',
+          outOfStock: true,
+          isFavorited: false
+        },
+        {
+          id: 2,
+          name: 'PP3OC MILKYWAY DRESS IN WOOL',
+          price: 32.50,
+          priceText: 'or Create an account to see pricing',
+          image: '/images/toy.jpg',
+          outOfStock: true,
+          isFavorited: false
+        },
+        {
+          id: 2,
+          name: 'PP3OC MILKYWAY DRESS IN WOOL',
+          price: 32.50,
+          priceText: 'or Create an account to see pricing',
+          image: '/images/toy.jpg',
+          outOfStock: true,
+          isFavorited: false
+        },
+        {
+          id: 2,
+          name: 'PP3OC MILKYWAY DRESS IN WOOL',
+          price: 32.50,
+          priceText: 'or Create an account to see pricing',
+          image: '/images/toy.jpg',
+          outOfStock: true,
+          isFavorited: false
+        },
+        {
+          id: 2,
+          name: 'PP3OC MILKYWAY DRESS IN WOOL',
+          price: 32.50,
+          priceText: 'or Create an account to see pricing',
+          image: '/images/toy.jpg',
+          outOfStock: true,
+          isFavorited: false
+        },
+        {
+          id: 2,
+          name: 'PP3OC MILKYWAY DRESS IN WOOL',
+          price: 32.50,
+          priceText: 'or Create an account to see pricing',
+          image: '/images/toy.jpg',
+          outOfStock: true,
+          isFavorited: false
+        },
         // Add more products as needed
       ];
   return (
