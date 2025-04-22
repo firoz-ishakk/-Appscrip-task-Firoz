@@ -1,0 +1,139 @@
+.heading {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 50px;
+}
+
+.headingText {
+  font-size: 45px;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 650px;
+  word-wrap: break-word;
+}
+
+.body {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  position: relative;
+  font-size: small;
+}
+
+.itemCount {
+  font-weight: bold;
+  display: flex;
+}
+
+.filterToggle {
+  display: flex;
+  cursor: pointer;
+  margin-left: 90px;
+  position: relative;
+}
+
+.arrow {
+  margin-right: 6px;
+  font-size: 10px;
+  color: #292d32;
+}
+
+.hideText {
+  color: gray;
+  text-decoration: underline;
+}
+
+.sort {
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+}
+
+.arrowDown {
+
+  transform: rotate(-90deg);
+}
+
+.dropdown {
+  position: absolute;
+  top: 40px;
+
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 15px;
+  width: 180px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.dropdown li {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+.active {
+  font-weight: bold;
+  position: relative;
+}
+
+.active::before {
+  content: url("/tick.png");
+  transform: scale(0.5);
+  transform-origin: left center;
+  position: absolute;
+  left: 1px;
+  bottom: 1px;
+}
+.filterText {
+  display: none;
+}
+
+@media screen and (max-width: 425px) {
+  .hideText {
+    display: none;
+  }
+  .arrow {
+    display: none;
+  }
+  .filterText {
+    display: flex;
+    position: absolute;
+    bottom: -10px;
+    margin-left: 10px;
+    place-items: center;
+    align-items: center;
+  }
+  .count {
+    display: none;
+  }
+
+  .filterToggle {
+    display: flex;
+    cursor: pointer;
+    margin-left: 0px;
+    position: relative;
+  }
+}

@@ -1,0 +1,97 @@
+.filterContainer {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    max-width: 300px;
+    background-color: transparent;
+    border-radius: 4px;
+    /* box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .filterItem{
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .filterHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .checkboxOnly {
+    padding: 15px;
+    cursor: default;
+  }
+  
+  .filterName{
+    font-weight: 600;
+    font-size: 13px;
+  }
+  
+  .filterValue{
+    color: #666;
+    font-size: 12px;
+    margin-right: 20px;
+  }
+  
+  .arrow {
+    position: absolute;
+    right: 15px;
+    color: #666;
+    font-size: 12px;
+  }
+
+  .filterHeaderContent{
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  .arrowDown{
+    transform: rotate(90deg);
+  }
+  .arrowUp{
+    transform: rotate(-90deg);
+  }
+  
+  .filterOptions {
+    padding: 10px 15px;
+    background-color: transparent;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .unselectOption{
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .checkboxLabel,
+  .checkboxOption {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .checkboxOption:last-child {
+    margin-bottom: 0;
+  }
+  
+  .checkbox-label input,
+  .checkboxOptioninput {
+    margin-right: 10px;
+  }
+  
+  .checkboxOption span {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 425px) {
+        .filterContainer{
+            display: none;
+        }
+  }
