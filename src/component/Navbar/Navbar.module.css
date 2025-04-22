@@ -12,7 +12,7 @@
   max-width: 1200px;
   height: 24px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -20,11 +20,6 @@
   display: flex;
   align-items: center;
   gap: 8px;
-}
-
-.icon {
-  width: 16px;
-  height: 16px;
 }
 
 .highlight {
@@ -36,12 +31,127 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+.midUpperSection {
+  display: flex;
+  /* width: 100%; */
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  position: relative;
+}
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 40px;
+  color: black;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icons {
+  height: 20px;
+  display: flex;
+  gap: 5px;
+}
+.hamburger {
+  height: 30px;
+  display: none;
+}
+
+.desktopOnly {
+  display: flex;
+}
+
+.lowerNavbar {
+  display: flex;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  gap: 64px;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: auto;
+  flex-direction: column;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e5e5e5; /* Light gray border */
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 425px) {
   .desktopOnly {
-    display: flex;
+    display: none;
   }
 
   .navbarContent {
     justify-content: space-around;
+  }
+
+  .hamburger {
+    height: 20px;
+    display: block;
+  }
+
+  .name {
+    font-size: 25px;
+  }
+
+  .menuIcon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 1px;
+  }
+
+  .leftSection {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .rightSection {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .logoIcon {
+    height: 25px;
+  }
+
+  .lowerNavbar {
+    display: none;
+  }
+
+  .Mobileicon {
+    display: none;
+  }
+  .midUpperSection {
+    margin-top: 10px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 2px solid #e5e5e5; /* Light gray border */
   }
 }
