@@ -76,10 +76,7 @@
 .lowerNavbar {
   display: flex;
   justify-content: center;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 2%;
-  padding-bottom: 3px;
+ padding:6px;
   gap: 64px;
   font-weight: bold;
 }
@@ -143,7 +140,7 @@
 
   .lowerNavbar {
     display: none;
-
+    
   }
 
   .Mobileicon {
