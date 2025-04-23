@@ -17,6 +17,7 @@ export const ProductCard = ({ showFilters, dataFetch }: any) => {
 
           <div className={styles.imageContainer}>
             <img
+            
               src={product.image}
               alt={product.name}
               className={styles.productImage}

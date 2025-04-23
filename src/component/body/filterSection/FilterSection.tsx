@@ -22,21 +22,21 @@ function FilerSection({ dataFetch }: any) {
         <span className={styles.itemCount}>
           <span className={styles.count}>3425 ITEMS</span>
           <div className={styles.filterToggle}>
-            {
-              showFilters?
-
+            {showFilters ? (
               <img
-              height={"15px"}
-              className={styles.arrowRight}
-              src={"arrow-left.png"}
+                alt="arrow"
+                height={"15px"}
+                className={styles.arrowRight}
+                src={"arrow-left.png"}
               />
-              :
+            ) : (
               <img
-              height={"15px"}
-              className={styles.arrow}
-              src={"arrow-left.png"}
+                alt="arrow"
+                height={"15px"}
+                className={styles.arrow}
+                src={"arrow-left.png"}
               />
-            }
+            )}
             <span
               onClick={() => setShowFilters((prev) => !prev)}
               className={styles.hideText}
@@ -54,6 +54,7 @@ function FilerSection({ dataFetch }: any) {
         >
           {selected}{" "}
           <img
+            alt="arrow"
             className={styles.arrowDown}
             height={"12px"}
             src={"arrow-left.png"}

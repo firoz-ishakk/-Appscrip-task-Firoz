@@ -94,9 +94,9 @@ const CustomFilter = () => {
                   className={`arrow ${expanded[filter.name] ? "up" : "down"}`}
                 >
                   {expanded[filter.name] ? (
-                    <img className={styles.arrowDown} src={"arrow-left.png"} />
+                    <img className={styles.arrowDown} src={"arrow-left.png"}         alt="arrow" />
                   ) : (
-                    <img className={styles.arrowUp} src={"arrow-left.png"} />
+                    <img className={styles.arrowUp} src={"arrow-left.png"}         alt="arrow" />
                   )}
                 </span>
               </div>
