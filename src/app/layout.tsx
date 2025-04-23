@@ -13,8 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Appscrip Demo",
+  title: "Appscrip",
   description: "An e-commerce demo",
+  icons: {
+    icon: "/vector.png",
+  }
 };
 
 
