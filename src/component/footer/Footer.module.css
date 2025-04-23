@@ -1,0 +1,156 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0 20px;
+  width: 100%;
+}
+
+.footerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 30px;
+  padding: 0 20px;
+}
+
+
+
+.sectionTitle {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.upperSection {
+  display: flex;
+  gap: 20px;  
+  justify-content: space-around;
+}
+.lowerSection {
+  display: flex;
+  justify-content: space-around;
+}
+.sectionText {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.newsletter{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.newsletterForm {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.emailInput {
+  padding: 10px;
+  width: 200px;
+  border: none;
+  font-size: 14px;
+  background: #fff;
+  color: #000;
+}
+
+.subscribeBtn {
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 15px;
+  border: 1px solid #444;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.contactInfo {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.currencySection {
+  margin-top: 30px;
+}
+
+.currencySelector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+
+.currencyInfo {
+  font-size: 12px;
+  color: #aaa;
+  max-width: 250px;
+}
+
+.linksList {
+  list-style: none;
+  padding: 0;
+}
+
+.linksList li {
+  margin-bottom: 10px;
+}
+
+.linksList a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.linksList a:hover {
+  text-decoration: underline;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paymentSection {
+  margin-top: 20px;
+}
+
+.paymentIcons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.paymentIcons img {
+  width: 40px;
+  height: auto;
+  object-fit: contain;
+}
+
+.footerBottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #aaa;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
