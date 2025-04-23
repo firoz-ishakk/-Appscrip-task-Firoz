@@ -11,7 +11,11 @@ export default function Footer() {
         <div className={styles.upperSection}>
           <div className={styles.footerSection}>
             <div className={styles.newsletter}>
-              <h3 className={styles.sectionTitle}>BE THE FIRST TO KNOW</h3>
+              <h3 className={styles.desktopSectionTitle}>BE THE FIRST TO KNOW</h3>
+              <h4 className={styles.sectionDescription}>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. this is simply dummy text.
+              </h4>
               <div>
                 <p className={styles.sectionText}>
                   Sign up for updates from mettä muse.
@@ -33,12 +37,14 @@ export default function Footer() {
           {/* Contact Info */}
 
           <div className={styles.footerSection}>
-            <h3 className={styles.sectionTitle}>CONTACT US</h3>
-            <p className={styles.contactInfo}>+44 221 123 5380</p>
-            <p className={styles.contactInfo}>customercare@mettamuse.com</p>
+            <h3 className={styles.desktopSectionTitle}>CONTACT US</h3>
+            <div className={styles.contactSection}>
+              <p className={styles.contactInfo}>+44 221 123 5380</p>
+              <p className={styles.contactInfo}>customercare@mettamuse.com</p>
+            </div>
 
             <div className={styles.currencySection}>
-              <h3 className={styles.sectionTitle}>CURRENCY</h3>
+              <h3 className={styles.desktopSectionTitle}>CURRENCY</h3>
               <div className={styles.currencySelector}>
                 <img src="/usa.png" alt="USD" width={20} height={20} />
                 <span>⬩ USD</span>
@@ -56,7 +62,12 @@ export default function Footer() {
         <div className={styles.lowerSection}>
           {/* Quick Links */}
           <div className={styles.footerSection}>
-            <h3 className={styles.sectionTitle}>mettā muse</h3>
+            <div className={styles.sectionTitle}>
+              mettā muse
+              <span className={styles.sectionArrow}>
+                <img src="/arrow-left.png" color="white" alt="USD" width={20} height={20} />
+              </span>
+            </div>
             <ul className={styles.linksList}>
               <li>
                 <Link href="/orders-shipping">About us</Link>
@@ -79,7 +90,12 @@ export default function Footer() {
             </ul>
           </div>
           <div className={styles.footerSection}>
-            <h3 className={styles.sectionTitle}>QUICK LINKS</h3>
+          <div className={styles.sectionTitle}>
+              QUICK LINKS
+              <span className={styles.sectionArrow}>
+                <img src="/arrow-left.png" color="white" alt="USD" width={20} height={20} />
+              </span>
+            </div>
             <ul className={styles.linksList}>
               <li>
                 <Link href="/orders-shipping">Orders & Shipping</Link>
@@ -107,7 +123,12 @@ export default function Footer() {
 
           {/* Social + Payment */}
           <div className={styles.footerSection}>
-            <h3 className={styles.sectionTitle}>FOLLOW US</h3>
+          <div className={styles.sectionTitle}>
+          FOLLOW US
+              <span className={styles.sectionArrow}>
+                <img src="/arrow-left.png" color="white" alt="USD" width={20} height={20} />
+              </span>
+            </div>
             <div className={styles.socialIcons}>
               <Link href="https://instagram.com" className={styles.socialIcon}>
                 <img src="/insta.png" alt="Instagram" width={30} height={30} />
@@ -123,14 +144,9 @@ export default function Footer() {
             </div>
 
             <div className={styles.paymentSection}>
-              <h3 className={styles.sectionTitle}>mettä muse ACCEPTS</h3>
+              <h3 className={styles.desktopSectionTitle}>mettä muse ACCEPTS</h3>
               <div className={styles.paymentIcons}>
-                <img
-                  src="/gpay.png"
-                  alt="Google Pay"
-                  width={40}
-                  height={25}
-                />
+                <img src="/gpay.png" alt="Google Pay" width={40} height={25} />
                 <img
                   src="/mastercard.png"
                   alt="Mastercard"
@@ -150,7 +166,7 @@ export default function Footer() {
                   width={40}
                   height={25}
                 />
-                <img    
+                <img
                   src="/shoppify.png"
                   alt="Shopify Pay"
                   width={40}
