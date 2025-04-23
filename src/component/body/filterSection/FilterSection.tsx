@@ -4,7 +4,7 @@ import styles from "../Body.module.css";
 import CustomFilter from "./CustomFilterSelection/CustomFilterSelection";
 import { ProductCard } from "../ProductCard/ProductCard";
 
-function FilerSection({dataFetch}:any) {
+function FilerSection({ dataFetch }: any) {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
   const [selected, setSelected] = useState("RECOMMENDED");
@@ -23,16 +23,26 @@ function FilerSection({dataFetch}:any) {
         <span className={styles.itemCount}>
           <span className={styles.count}>3425 ITEMS</span>
           <div className={styles.filterToggle}>
-            <img
+            {
+              showFilters?
+
+              <img
+              height={"15px"}
+              className={styles.arrowRight}
+              src={"arrow-left.png"}
+              />
+              :
+              <img
               height={"15px"}
               className={styles.arrow}
               src={"arrow-left.png"}
-            />
+              />
+            }
             <span
-              onClick={() => setShowFilters(prev=>!prev)}
+              onClick={() => setShowFilters((prev) => !prev)}
               className={styles.hideText}
             >
-              HIDE FILTER
+              {showFilters ? "SHOW FILTER" : "HIDE FILTER"}
             </span>
 
             <span className={styles.filterText}>FILTER</span>
@@ -74,7 +84,7 @@ function FilerSection({dataFetch}:any) {
           </div>
         )}
         <div>
-          <ProductCard dataFetch={dataFetch} showFilters={showFilters}/>
+          <ProductCard dataFetch={dataFetch} showFilters={showFilters} />
         </div>
       </div>
     </div>
