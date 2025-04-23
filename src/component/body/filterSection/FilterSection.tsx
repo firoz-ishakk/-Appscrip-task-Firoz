@@ -4,7 +4,7 @@ import styles from "../Body.module.css";
 import CustomFilter from "./CustomFilterSelection/CustomFilterSelection";
 import { ProductCard } from "../ProductCard/ProductCard";
 
-function FilerSection() {
+function FilerSection({dataFetch}:any) {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
   const [selected, setSelected] = useState("RECOMMENDED");
@@ -74,7 +74,7 @@ function FilerSection() {
           </div>
         )}
         <div>
-          <ProductCard />
+          <ProductCard dataFetch={dataFetch} showFilters={showFilters}/>
         </div>
       </div>
     </div>

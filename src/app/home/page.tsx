@@ -2,7 +2,7 @@ import Home from '@/component/home/Home'
 import React from 'react'
 async function fetchData() {
   try {
-    const data = await fetch('https://fakestoreapi.com/products/1',{
+    const data = await fetch('https://fakestoreapi.com/products',{
         method:'GET',
         headers: {
             'Content-Type': 'application/json',

@@ -11,7 +11,7 @@ function Body(dataFetch: any) {
         <Heading />
       </div>
       <div>
-        <FilerSection />
+        <FilerSection dataFetch={dataFetch}/>
       </div>
     </div>
   );
