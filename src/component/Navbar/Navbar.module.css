@@ -72,7 +72,7 @@
   display: flex;
 }
 
-.navbar .lowerNavbar {
+.lowerNavbar {
   display: flex;
   justify-content: center;
   padding-left: 5%;
@@ -80,18 +80,14 @@
   padding-top: 2%;
   gap: 64px;
   font-weight: bold;
-  cursor: pointer;
-  list-style: none;
 }
-
-
 
 .navbar {
   display: flex;
   justify-content: center;
   padding: auto;
   flex-direction: column;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   border-bottom: 2px solid #e5e5e5; /* Light gray border */
 }
 
