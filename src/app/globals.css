@@ -11,15 +11,13 @@
 }
 
 @font-face {
-  font-family: 'Simplon Norm';
-  src: url('/fonts/Simplon-Norm.woff2') format('woff2'),
-       url('/fonts/Simplon-Norm.ttf') format('truetype');
+  font-family: "Simplon Norm";
+  src: url("/fonts/Simplon-Norm.woff2") format("woff2"),
+    url("/fonts/Simplon-Norm.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-
-
 
 html,
 body {
@@ -30,7 +28,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Simplon Norm", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

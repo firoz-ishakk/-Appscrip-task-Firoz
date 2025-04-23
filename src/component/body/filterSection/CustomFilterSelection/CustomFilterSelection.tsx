@@ -30,43 +30,43 @@ const CustomFilter = () => {
     {
       name: "OCCASION",
       type: "dropdown",
-      options: [],
+      options: ["Outdoor", "Indoor", "Casual", "Formal", "Party", "Wedding"],
       defaultValue: "All",
     },
     {
       name: "WORK",
       type: "dropdown",
-      options: [],
+      options: [ "Office", "Home", "Party", "Wedding", "Casual", "Formal", "Outdoor", "Indoor"],
       defaultValue: "All",
     },
     {
       name: "FABRIC",
       type: "dropdown",
-      options: [],
+      options: ["Cotton","Polyester","Leather"],
       defaultValue: "All",
     },
     {
       name: "SEGMENT",
       type: "dropdown",
-      options: [],
+      options: ["Men" , "Women" , "Baby & Kids"],
       defaultValue: "All",
     },
     {
       name: "SUITABLE FOR",
       type: "dropdown",
-      options: [],
+      options: ["Men" , "Women" , "Baby & Kids"],
       defaultValue: "All",
     },
     {
       name: "RAW MATERIALS",
       type: "dropdown",
-      options: [],
+      options: ["Cotton","Polyester","Leather"],
       defaultValue: "All",
     },
     {
       name: "PATTERN",
       type: "dropdown",
-      options: [],
+      options: ["Mosaic", "Zigzag", "Plain", "Striped", "Geometric", "Printed"],
       defaultValue: "All",
     },
   ];
@@ -107,7 +107,7 @@ const CustomFilter = () => {
 
               {expanded[filter.name] && filter.options.length > 0 && (
                 <div className={styles.filterOptions}>
-                  {filter.type === "checkbox" && (
+                  {filter.type && (
                     <>
                       <div className={styles.unselectOption}>Unselect all</div>
                       {filter.options.map((option) => (

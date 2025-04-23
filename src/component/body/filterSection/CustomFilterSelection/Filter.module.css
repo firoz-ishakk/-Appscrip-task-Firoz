@@ -1,10 +1,7 @@
 .filterContainer {
-    font-family: Arial, sans-serif;
     width: 100%;
-    /* max-width: 1800px; */
     background-color: transparent;
     border-radius: 4px;
-    /* box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1); */
   }
   
   .filterItem{
@@ -24,6 +21,8 @@
   .checkboxOnly {
     padding: 15px;
     cursor: default;
+    display: flex;
+    align-items: center;
   }
   
   .filterName{
@@ -72,10 +71,15 @@
   
   .checkboxLabel,
   .checkboxOption {
+    display: block;
     display: flex;
-    align-items: center;
     cursor: pointer;
-    margin-bottom: 10px;
+    gap: 5px;
+  }
+
+  .checkboxLabel{
+    display: flex;
+    gap:5px;
   }
   
   .checkboxOption:last-child {
@@ -88,7 +92,10 @@
   }
   
   .checkboxOption span {
-    font-size: 14px;
+    font-size: 15px;
+    display: flex;
+    gap:"20px";
+
   }
 
   .bodyContent{

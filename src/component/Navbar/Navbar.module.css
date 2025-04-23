@@ -48,9 +48,11 @@
 }
 
 .name {
-  font-weight: bold;
-  font-size: 40px;
+  font-weight: bolder;
+  font-size: 30px;
   color: black;
+  font-family: "Inter", sans-serif;
+
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
