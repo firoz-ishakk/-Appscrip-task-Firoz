@@ -87,7 +87,7 @@
   padding: auto;
   flex-direction: column;
   padding-bottom: 20px;
-  border-bottom: 2px solid #e5e5e5; /* Light gray border */
+  border-bottom: 2px solid #e5e5e5; 
 }
 
 .rightSection {
@@ -96,7 +96,6 @@
   gap: 20px;
 }
 
-/* MOBILE */
 @media (max-width: 425px) {
   .desktopOnly {
     display: none;
@@ -140,7 +139,7 @@
 
   .lowerNavbar {
     display: none;
-    
+
   }
 
   .Mobileicon {
@@ -148,7 +147,6 @@
   }
   .midUpperSection {
     display: flex;
-    /* width: 100%; */
     align-items: center;
     justify-content: space-between;
     padding-bottom:2%;
@@ -160,6 +158,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border-bottom: 2px solid #e5e5e5; /* Light gray border */
+    border-bottom: 2px solid #e5e5e5;
   }
 }

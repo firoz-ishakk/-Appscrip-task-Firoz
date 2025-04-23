@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import styles from "./Filter.module.css";
 
 const CustomFilter = () => {
-  // Track which categories are expanded
   const [expanded, setExpanded] = useState<any>({});
-
-  // Toggle expansion state for a specific category
   const toggleExpand = (category: any) => {
     setExpanded((prev: any) => ({
       ...prev,
@@ -13,7 +10,6 @@ const CustomFilter = () => {
     }));
   };
 
-  // Filter categories and their options
   const filters = [
     {
       name: "CUSTOMIZBLE",

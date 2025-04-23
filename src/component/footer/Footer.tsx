@@ -7,7 +7,6 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
-        {/* Newsletter */}
         <div className={styles.upperSection}>
           <div className={styles.footerSection}>
             <div className={styles.newsletter}>
@@ -33,9 +32,6 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
-          {/* Contact Info */}
-
           <div className={styles.footerSection}>
             <h3 className={styles.desktopSectionTitle}>CONTACT US</h3>
             <div className={styles.contactSection}>
@@ -60,7 +56,6 @@ export default function Footer() {
         <hr />
 
         <div className={styles.lowerSection}>
-          {/* Quick Links */}
           <div className={styles.footerSection}>
             <div className={styles.sectionTitle}>
               mettā muse
@@ -121,7 +116,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Social + Payment */}
           <div className={styles.footerSection}>
           <div className={styles.sectionTitle}>
           FOLLOW US
@@ -177,8 +171,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
-      {/* Footer Bottom */}
       <div className={styles.footerBottom}>
         <p>Copyright © 2023 mettamuse. All rights reserved.</p>
       </div>

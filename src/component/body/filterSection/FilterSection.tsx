@@ -8,7 +8,6 @@ function FilerSection({ dataFetch }: any) {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
   const [selected, setSelected] = useState("RECOMMENDED");
-  console.log(showFilters);
   const options = [
     "RECOMMENDED",
     "NEWEST FIRST",
