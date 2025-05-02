@@ -4,6 +4,8 @@ import styles from "../Navbar.module.css";
 
 function NavbarUpper() {
   return (
+    <div>
+
     <div className={styles.topNavbar}>
     <div className={styles.navbarContent}>
       <div className={`${styles.navbarItem} ${styles.desktopOnly}`}>
@@ -22,6 +24,7 @@ function NavbarUpper() {
       </div>
     </div>
   </div>
+    </div>
   )
 }
 
